@@ -4,7 +4,7 @@ import { InputContext } from "../App";
 import Antonym from "./Antonym";
 import Example from "./Example";
 import MeanigList from "./MeaningList";
-import Synonym from "./Synonym";
+
 
 axios.defaults.baseURL = 'https://api.dictionaryapi.dev/api/v2/entries/en';
 
@@ -56,8 +56,7 @@ const ResultList = () => {
           <MeanigList mean={response} />
           <h3 className="text-2xl font-bold mt-4">Example:</h3>
           <Example mean={response} />
-          {/* <h3 className="text-2xl font-bold mt-4">Synonym:</h3>
-          <Synonym mean={response} /> */}
+        
           <h3 className="text-2xl font-bold mt-4">Antonym:</h3>
           <Antonym mean={response} />
         </div>
